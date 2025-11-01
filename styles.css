@@ -66,14 +66,26 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-/* Specific Styles for About Us Page */
+footer p, footer a {
+    display: block; 
+    margin: 5px 10px; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    min-width: 0; 
+    max-width: 95%; 
+}
+@media (max-width: 600px) {
+    footer p, footer a {
+        font-size: 0.9em; 
+        line-height: 1.3;
+    }
+    
+}
+/* About Us Page */
 body.aboutus {
     background-image: url('Images/bubbles.jpg');
     background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+    
 }
 
 header {
@@ -125,4 +137,151 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+/* Search Bar Styles */
+
+.search-container {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+#serviceSearch {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0044cc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; 
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#serviceSearch:focus {
+    border-color: #002a80;
+}
+.accordion-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left; 
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+.accordion-header {
+    background-color: #f0f0f0;
+    color: #0044cc;
+    cursor: pointer;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.accordion-header:hover {
+    background-color: #e0e0e0;
+}
+
+
+.accordion-header.active {
+    background-color: #0044cc;
+    color: white;
+}
+
+.accordion-content {
+    padding: 0 20px;
+    background-color: white;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.accordion-content.show {
+    max-height: 500px; 
+    padding: 15px 20px; 
+}
+
+/* Lightbox Gallery Styles   */
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.gallery-image {
+    width: 30%; 
+    cursor: pointer;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+    border-color: #0044cc;
+}
+
+/* The Lightbox Modal */
+.lightbox {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 90vh; 
+}
+
+/* Caption */
+#lightbox-caption {
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+/* The Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }

@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr Wash Laundry</title>
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self' https://maps.googleapis.com; 
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+                   img-src 'self' data:;">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="typography.css">
 </head>
 <body>
     <header>
@@ -13,18 +19,21 @@
         <nav>
             <a href="home.html">Home</a>
             <a href="aboutus.html">About Us</a>
-            <a href="servives.html">Services</a>
+            <a href="services.html">Services</a>
             <a href="prices.html">Prices</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
     <main>
         <h2>Our Pricing</h2>
-        <img src="Images/Price 1.png" alt="Price 1 image">
-        <img src="Images/Price 2.png" alt="Price 2 image">
-        <img src="Images/Price T&C.png" alt="Price 3 image">
         
-        <p>Thank you for choosing Dr Wash Laundry for your laundry needs!</p>
+      <div class="image-gallery">
+            <img src="Images/Price 1.png" alt="Dr Wash Price List 1" class="gallery-image">
+            <img src="Images/Price 2.png" alt="Dr Wash Price List 2" class="gallery-image">
+            <img src="Images/Price T&C.png" alt="Dr Wash Price Terms and Conditions" class="gallery-image">
+        </div>
+        <p><b>CLICK TO VIEW THE PRICING </b></p>
+        <h3>Thank you for choosing Dr Wash Laundry for your laundry needs!</h3>
 
 </main>
   <footer>
@@ -37,8 +46,13 @@
 
     <p>Call Us: 063 123 2444 / 021 447 1313</a></p> 
     <p>Address: 40 Cole St, Observatory, Cape Town, 7925</p>
-   
-
-</footer>  
+   </footer>  
+   <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+        <div id="lightbox-caption"></div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>

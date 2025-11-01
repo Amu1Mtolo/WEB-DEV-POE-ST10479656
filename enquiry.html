@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form | Send a Message to Dr Wash Laundry</title>
+    <meta name="description" content="Use our secure online form to schedule a pickup, request a quote, or send a general message to Dr Wash Laundry in Cape Town.">
+
+   
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self'; 
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+                   img-src 'self' data:;">
+                   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SEND AN ENQUIRY</h1>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="prices.html">Prices</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Submit Your Enquiry</h2>
+        <p><b>Please fill out the form below to schedule a service, request a quote, or send us a detailed message.</b></p>
+        
+        <form action="mailto:recipient@example.com" method="post" enctype="text/plain">
+            <p>
+                <input type="text" id="name" name="name" placeholder="Name:" required/>
+                <input type="text" id="surname" name="surname" placeholder="Surname:" required/>
+            </p>
+            <p>
+                <input type="email" id="email" name="email" placeholder="Email:" required/>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number: " pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Format: 063 123 2444" required/>
+            </p>
+            
+           
+            <p>
+                <select id="messageType" name="messageType" required>
+                    <option value="" disabled selected>Select Enquiry Type</option>
+                    <option value="pickup">Schedule Pickup/Delivery</option>
+                    <option value="pricing">Pricing/Quote Inquiry</option>
+                    <option value="complaint">Complaint or Feedback</option>
+                    <option value="general">General Message</option>
+                </select>
+            </p>
+
+            <p>
+                <textarea id="message" name="enquiry" rows="7" cols="50" placeholder="Your Full Message" required></textarea>
+            </p>
+            <p><button type="submit">Send Message</button></p>
+        </form>
+
+        <p><b>We aim to respond to all online enquiries within 24 hours.</b></p>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Dr Wash Laundry. All rights reserved.</p>
+        <p> Follow us on social media:</p>
+        <a href="mailto:info@drwashlaundry.com">Email Us</a> 
+        <a href="https://www.facebook.com/DrWashLaundry">Facebook</a> |
+        <a href="https://www.twitter.com/DrWashLaundry">Twitter</a> |
+        <a href="https://www.instagram.com/DrWashLaundry">Instagram</a>
+    
+        <p>Call Us: 063 123 2444 / 021 447 1313</a></p> 
+        <p>Address: 40 Cole St, Observatory, Cape Town, 7925</p> 
+    </footer>
+    
+    <script src="script.js"></script> 
+</body>
+</html>

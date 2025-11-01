@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr Wash Laundry</title>
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self' https://maps.googleapis.com; 
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+                   img-src 'self' data:;">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="typography.css">
 </head>
 <body>
     <header>
@@ -13,22 +19,72 @@
         <nav>
             <a href="home.html">Home</a>
             <a href="aboutus.html">About Us</a>
-            <a href="servives.html">Services</a>
+            <a href="services.html">Services</a>
             <a href="prices.html">Prices</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 <main>
-    <h2>Our Sevices</h2>
+    <h2>Our Services</h2>
     <p><b>At Dr Wash Laundry, we offer a comprehensive range of laundry services to meet all your needs. Our services include:</p></b>
-    <ul>
-        <li><b>Washing and Drying: We provide high-quality washing and drying services using eco-friendly detergents and modern equipment to ensure your clothes are clean and fresh.</li></b>
-        <li><b>Ironing: Our professional ironing service will leave your clothes wrinkle-free and looking their best.</li></b>
-        <li><b>Dry Cleaning: We offer expert dry cleaning for delicate fabrics and special garments, ensuring they are treated with the utmost care.</li></b>
-        <li><b>Pickup and Delivery: For your convenience, we offer pickup and delivery services, making it easier than ever to get your laundry done.</li></b>
-        <li><b>Special Care Services: We provide specialized care for items such as suits, dresses, and other delicate clothing that require extra attention.
-        </li></b>
-    <img src="Images/SERVICES.png" alt="Laundry services image"> 
+     <P> CLICK A OPTION FOR MORE INFORMATION </P>
+    <div class="search-container">
+        <input type="text" id="serviceSearch" placeholder="Search for a service..." aria-label="Search services">
+    </div>
+    
+
+    <div class="accordion-container">
+        </div>
+
+    <div class="accordion-container">
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Washing and Drying
+            </button>
+            <div class="accordion-content">
+                <p>We provide high-quality washing and drying services using eco-friendly detergents and modern equipment to ensure your clothes are clean and fresh.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Ironing
+            </button>
+            <div class="accordion-content">
+                <p>Our professional ironing service will leave your clothes wrinkle-free and looking their best.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Dry Cleaning
+            </button>
+            <div class="accordion-content">
+                <p>We offer expert dry cleaning for delicate fabrics and special garments, ensuring they are treated with the utmost care.</p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Pickup and Delivery
+            </button>
+            <div class="accordion-content">
+                <p>For your convenience, we offer pickup and delivery services, making it easier than ever to get your laundry done.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">
+                Special Care Services
+            </button>
+            <div class="accordion-content">
+                <p>We provide specialized care for items such as suits, dresses, and other delicate clothing that require extra attention.</p>
+            </div>
+        </div>
+
+    </div>
+    <img src="Images/SERVICES.png" alt="Range of laundry services: washing, dry cleaning, pickup, and delivery">
 </main>
 <footer>
     <p>&copy; 2025 Dr Wash Laundry. All rights reserved.</p>
@@ -42,6 +98,6 @@
     <p>Address: 40 Cole St, Observatory, Cape Town, 7925</p>
 
 </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
