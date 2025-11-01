@@ -124,7 +124,22 @@ Contact & Location Improvements
 
 <img width="1918" height="927" alt="Screenshot 2025-11-01 164519" src="https://github.com/user-attachments/assets/00caf09d-3ade-4db5-8be7-6afc8ca27bf1" />
 
+## References
+Project Requirements: Document outlining the core objectives for interactive elements, including implementing accordions, lightboxes, and location-based features.
 
+Source: Screenshot 2025-11-01 153609.png
+
+ Contact Page Design (Before): Visual reference for the original contact.html layout, showing the address, phone, and email details before they were made clickable.
+
+Source: Screenshot 2025-11-01 154448.jpg
+
+Map Image Asset: The static Google Maps screenshot used as a visual replacement for the interactive map on the contact.html page.
+
+Source: Screenshot 2025-11-01 154114.jpg
+
+Enquiry Page Design: Visual reference for the form structure and button placement on the new enquiry.html page, which was used for implementing the success modal.
+
+Source: Screenshot 2025-11-01 164751.png
 
 
 
